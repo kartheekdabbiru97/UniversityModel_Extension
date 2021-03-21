@@ -26,6 +26,8 @@ public class Info5001UniversityExample {
     /**
      * @param args the command line arguments
      */
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
         Department department = new Department("Information Systems");
