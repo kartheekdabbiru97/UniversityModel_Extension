@@ -7,6 +7,7 @@ package info5100.university.example.Persona;
 
 import info5100.university.example.CourseSchedule.CourseLoad;
 import info5100.university.example.Persona.EmploymentHistory.EmploymentHistroy;
+import java.util.HashMap;
 
 /**
  *
@@ -46,5 +47,19 @@ public class StudentProfile {
     public CourseLoad newCourseLoad(String s){
         
         return transcript.newCourseLoad(s);
+    }
+    
+    public Person personobj(){//new 
+        
+        return this.person;
+    }
+    
+    public void PrintTranscript(String sem){
+        
+        HashMap<String, CourseLoad> map = transcript.getCourseloadlist();
+        CourseLoad s = map.get(sem);
+        //s.
+        
+        
     }
 }

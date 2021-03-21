@@ -16,6 +16,10 @@ public class Transcript {
     
     
     HashMap<String, CourseLoad> courseloadlist;
+
+    public HashMap<String, CourseLoad> getCourseloadlist() {
+        return courseloadlist;
+    }
     
     CourseLoad currentcourseload;
     
@@ -39,6 +43,7 @@ public class Transcript {
     }
         public CourseLoad getCourseLoadBySemester(String semester){
         
+            //System.out.println("course load in transcript "+courseloadlist.get(semester));
         return courseloadlist.get(semester);
         
     }
